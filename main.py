@@ -20,9 +20,6 @@ app.add_middleware(
 
 @app.post("/api/info", status_code=201)
 async def test(request: Request):
-    print(dir(request))
-    print(request)
-    print(await request.json())
 
     response = {
         "hostname": socket.gethostname(),
