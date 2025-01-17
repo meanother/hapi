@@ -7,7 +7,7 @@ cd $HOME
 mkdir -p code
 
 cd $HOME/code/
-git clone hapi.git
+git clone https://github.com/meanother/hapi.git
 
 cd $HOME/code/hapi
 python3 -m venv env
