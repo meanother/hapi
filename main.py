@@ -4,12 +4,12 @@ from fastapi.responses import JSONResponse
 
 import socket
 import datetime
-import logging
+
+from core.utils import logger
 
 SERVER_TYPE = "MIRROR"
 
 app = FastAPI()
-logger = logging.getLogger("app")
 
 app.add_middleware(
     CORSMiddleware,
